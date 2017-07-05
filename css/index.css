@@ -1,0 +1,345 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+/* 头部工具栏 */
+.top_tool .row > div {
+  border: 1px solid #000;
+  border-right: none;
+  border-top: none;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  /* 手机微金所 */
+}
+.top_tool .row > div > a {
+  color: #808080;
+}
+.top_tool .row > div .btn {
+  color: #fff;
+}
+.top_tool .row > div .wjs_phone_a {
+  position: relative;
+}
+.top_tool .row > div .wjs_phone_a img {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.top_tool .row > div .wjs_phone_a:hover img {
+  display: block;
+  z-index: 1;
+}
+/* 导航条 */
+.wjs_nav .navbar-default {
+  margin-bottom: 0;
+}
+.wjs_nav .container a {
+  height: 80px;
+  line-height: 80px;
+  display: block;
+}
+.wjs_nav .container .navbar-nav li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.wjs_nav .container .navbar-nav li > a:hover,
+.wjs_nav .container .navbar-nav li > a:focus {
+  border-bottom: 1px solid red;
+}
+.wjs_nav .container .navbar-brand {
+  padding-top: 5px;
+}
+.wjs_nav .wjsfont-logo {
+  font-size: 70px;
+  color: red;
+}
+.wjs_nav .wjsfont-name {
+  font-size: 70px;
+}
+/* 轮播图 */
+.wjs_carousel img {
+  width: 100%;
+}
+/* 支付交易保障 */
+.exchange {
+  margin-bottom: 60px;
+}
+.exchange .row > div {
+  padding: 30px 0 0;
+}
+.exchange a {
+  color: #808080;
+}
+.exchange a:hover {
+  color: red;
+}
+.exchange a .media .media-left {
+  font-size: 40px;
+}
+.exchange a .media .media-body h4 {
+  font-size: 22px;
+}
+/* 正在排队 */
+.wjs_waiting {
+  height: 80px;
+  /*  会换行的话 尽量不要用lh */
+  padding: 30px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.wjs_waiting .pull-left > a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+.wjs_waiting .pull-right > a {
+  color: #000;
+}
+/* 微投资 */
+.wjs_buy {
+  /* 默认 -灰色 */
+  /* 体验 红色 */
+  /*  进度  灰色  */
+}
+.wjs_buy .cart_default {
+  margin-top: 10px;
+  box-shadow: 1px 1px 1px 1px #ccc, -1px -1px 1px 1px #ccc;
+}
+.wjs_buy .cart_default .cart_a {
+  padding-right: 80px;
+  position: relative;
+  display: block;
+  background-color: #f7f7f7;
+  color: #808080;
+}
+.wjs_buy .cart_default .cart_a .cart_content > h4 {
+  padding-top: 30px;
+  text-align: center;
+}
+.wjs_buy .cart_default .cart_a .cart_content .cart_box {
+  padding: 0 5px;
+}
+.wjs_buy .cart_default .cart_a .cart_content .cart_box .pull-right {
+  text-align: right;
+}
+.wjs_buy .cart_default .cart_a .cart_rate {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  border-left: 1px dashed #000;
+  padding: 50px 0;
+  text-align: center;
+  /*可以尝试给左边的盒子加伪元素--看看效果 */
+}
+.wjs_buy .cart_default .cart_a .cart_rate:before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 0px 0px #ccc;
+}
+.wjs_buy .cart_default .cart_a .cart_rate:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, 50%);
+  box-shadow: 0 -1px 0px 0px #ccc;
+}
+.wjs_buy .cart_exp .cart_a {
+  background-color: red;
+  color: #fff;
+}
+.wjs_buy .cart_exp .cart_a .cart_content {
+  position: relative;
+}
+.wjs_buy .cart_exp .cart_a .cart_content > .wjsfont {
+  position: absolute;
+  top: 0;
+  font-size: 40px;
+}
+.wjs_buy .cart_exp .cart_a .cart_rate {
+  border-color: #fff;
+}
+.wjs_buy .cart_progress .cart_a .cart_content > .cart_box > div {
+  width: 50%;
+}
+.wjs_buy .cart_progress .cart_a .cart_content .progress {
+  margin-bottom: 10px;
+}
+.wjs_buy .cart_progress .cart_a .cart_rate span:first-child {
+  color: green;
+  border: 1px solid green;
+}
+.wjs_buy .cart_progress .cart_a .cart_rate span:last-child {
+  color: red;
+  border: 1px solid red;
+}
+/* 新闻 */
+.wjs_news {
+  /* 全部新闻 */
+  /* 新闻标题 */
+}
+.wjs_news .all_news {
+  font-size: 30px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.wjs_news .all_news:before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  transform: translateY(50%);
+  background-color: #fff;
+}
+.wjs_news .news_title {
+  position: relative;
+  /* 竖线 */
+}
+.wjs_news .news_title .line {
+  border-right: 1px dashed #000;
+  height: 400px;
+  position: absolute;
+  left: 75px;
+}
+.wjs_news .news_title ul {
+  list-style: none;
+}
+.wjs_news .news_title ul li {
+  margin-bottom: 60px;
+}
+.wjs_news .news_title ul li a {
+  display: block;
+  height: 70px;
+  text-align: center;
+  width: 70px;
+  padding-top: 10px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  z-index: 2;
+  position: relative;
+}
+.wjs_news .news_title ul li a:hover,
+.wjs_news .news_title ul li a:focus {
+  background-color: red;
+}
+.wjs_news .news_title ul li a .wjsfont {
+  font-size: 50px;
+  color: #fff;
+}
+/* 尾部 */
+footer {
+  text-align: center;
+}
+footer h4 {
+  margin-top: 45px;
+  font-size: 30px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin-left: 30px;
+}
+footer ul li a .wjsfont {
+  font-size: 80px;
+  color: #808080;
+}

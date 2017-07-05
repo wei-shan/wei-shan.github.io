@@ -1,0 +1,303 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+.top_tool {
+  text-align: center;
+}
+.top_tool .row > div {
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.top_tool .row > div a {
+  color: #808080;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+}
+.top_tool .row > div a img {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 18px;
+}
+.top_tool .row > div a:hover img {
+  display: block;
+}
+.top_tool .row > div .btn {
+  color: #fff;
+  height: 34px;
+  line-height: 20px;
+}
+.wjs_nav .navbar-default {
+  margin-bottom: 0;
+}
+.wjs_nav .navbar-default a {
+  height: 80px;
+  padding: 0 15px;
+  line-height: 80px;
+}
+.wjs_nav .navbar-default .navbar-header > a span {
+  font-size: 70px;
+}
+.wjs_nav .navbar-default .navbar-header > a span:first-child {
+  color: red;
+}
+.wjs_nav .navbar-default .navbar-collapse .navbar-nav a:hover,
+.wjs_nav .navbar-default .navbar-collapse .navbar-nav a:focus {
+  border-bottom: 1px solid #f00;
+}
+.wjs_carousel img {
+  width: 100%;
+}
+.exchange {
+  padding-bottom: 60px;
+}
+.exchange .container .row > div {
+  padding-top: 30px;
+}
+.exchange .container .row > div a {
+  color: #8b8b8b;
+}
+.exchange .container .row > div a span {
+  font-size: 40px;
+}
+.exchange .container .row > div a h4 {
+  font-size: 25px;
+}
+.exchange .container .row > div a:hover {
+  color: red;
+}
+.wjs_waiting {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 30px 0;
+}
+.wjs_waiting .pull-left a {
+  color: red;
+  border-bottom: 1px dashed #f00;
+}
+.wjs_waiting .pull-right a {
+  color: #000;
+}
+.wjs_buy .tab-content .row > div {
+  margin: 10px 0px;
+}
+.wjs_buy .tab-content .row > div a {
+  color: #808080;
+  box-shadow: 1px 1px 1px 1px #ccc, -1px -1px 1px 1px #ccc;
+  padding-right: 80px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.wjs_buy .tab-content .row > div a p {
+  margin-bottom: 10px;
+}
+.wjs_buy .tab-content .row > div a .card_content {
+  width: 100%;
+  padding: 20px 10px 0;
+  border-right: 1px dashed #000;
+}
+.wjs_buy .tab-content .row > div a .card_content .pull-right {
+  text-align: right;
+  width: 50%;
+}
+.wjs_buy .tab-content .row > div a .card_content .pull-right .progress {
+  margin-bottom: 10px;
+}
+.wjs_buy .tab-content .row > div a .card_content .pull-left {
+  text-align: left;
+  display: block;
+  width: 50%;
+}
+.wjs_buy .tab-content .row > div a .card_rate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 50px;
+  height: 100%;
+  width: 80px;
+}
+.wjs_buy .tab-content .row > div a .card_rate:before,
+.wjs_buy .tab-content .row > div a .card_rate:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+.wjs_buy .tab-content .row > div a .card_rate:before {
+  top: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 1px 0 #ccc;
+}
+.wjs_buy .tab-content .row > div a .card_rate:after {
+  bottom: 0;
+  box-shadow: 0 -1px 1px 0 #ccc;
+  transform: translate(-50%, 50%);
+}
+.wjs_buy .tab-content .row > div .card-red {
+  background-color: #f00;
+}
+.wjs_buy .tab-content .row > div .card-red .card-font {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 40px;
+}
+.wjs_news .container .all_news {
+  border-bottom: 1px solid #000;
+  font-size: 30px;
+  position: relative;
+}
+.wjs_news .container .all_news:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%, 50%);
+  border: 1px solid #000;
+  background-color: #fff;
+}
+.wjs_news .container .news_title {
+  position: relative;
+}
+.wjs_news .container .news_title .line {
+  height: 400px;
+  width: 0px;
+  border-right: 1px dashed #000;
+  position: absolute;
+  left: 75px;
+}
+.wjs_news .container .news_title .row {
+  list-style: none;
+}
+.wjs_news .container .news_title .row li {
+  margin-bottom: 60px;
+}
+.wjs_news .container .news_title .row li a {
+  position: relative;
+  z-index: 1px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ccc;
+  line-height: 70px;
+  text-align: center;
+  padding: 10px;
+}
+.wjs_news .container .news_title .row li a span {
+  color: #fff;
+  font-size: 50px;
+}
+.wjs_news .container .news_title .row li a:hover,
+.wjs_news .container .news_title .row li a:focus {
+  background-color: red;
+}
+footer {
+  padding-top: 20px;
+}
+footer h4 {
+  text-align: center;
+  font-size: 30px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin: 0 20px;
+}
+footer ul li a {
+  font-size: 80px;
+  color: #808080;
+}

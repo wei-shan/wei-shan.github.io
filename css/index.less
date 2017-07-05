@@ -1,0 +1,332 @@
+@import "wjsfont.less";
+.wjs_view {}
+
+
+/* 头部工具栏 */
+
+.top_tool {
+    .row {
+        >div {
+            border: 1px solid #000;
+            border-right: none;
+            border-top: none;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            >a {
+                color: #808080;
+            }
+            .btn {
+                color: #fff;
+            }
+            /* 手机微金所 */
+            .wjs_phone_a {
+                position: relative;
+                img {
+                    display: none;
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+                }
+                &:hover img {
+                    display: block;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+
+/* 导航条 */
+
+.wjs_nav {
+    .navbar-default {
+        margin-bottom: 0;
+    }
+    .container {
+        a {
+            height: 80px;
+            line-height: 80px;
+            display: block;
+        }
+        .navbar-nav {
+            li {
+                >a {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    &:hover,
+                    &:focus {
+                        border-bottom: 1px solid red;
+                    }
+                }
+            }
+        }
+        .navbar-brand {
+            padding-top: 5px;
+        }
+    }
+    .wjsfont-logo {
+        font-size: 70px;
+        color: red;
+    }
+    .wjsfont-name {
+        font-size: 70px;
+    }
+}
+
+
+/* 轮播图 */
+
+.wjs_carousel {
+    img {
+        width: 100%;
+    }
+}
+
+
+/* 支付交易保障 */
+
+.exchange {
+    margin-bottom: 60px;
+    .row {
+        >div {
+            padding: 30px 0 0;
+        }
+    }
+    a {
+        color: #808080;
+        &:hover {
+            color: red;
+        }
+        .media {
+            .media-left {
+                font-size: 40px;
+            }
+            .media-body {
+                //   text-align: center;
+                h4 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+
+/* 正在排队 */
+
+.wjs_waiting {
+    height: 80px;
+    /*  会换行的话 尽量不要用lh */
+    padding: 30px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    .pull-left {
+        >a {
+            color: red;
+            border-bottom: 1px dashed red;
+        }
+    }
+    .pull-right {
+        >a {
+            color: #000;
+        }
+    }
+}
+
+
+/* 微投资 */
+
+.wjs_buy {
+    /* 默认 -灰色 */
+    .cart_default {
+        margin-top: 10px;
+        box-shadow: 1px 1px 1px 1px #ccc, -1px -1px 1px 1px #ccc;
+        .cart_a {
+            padding-right: 80px;
+            position: relative;
+            display: block; // border: 1px solid #000;
+            background-color: #f7f7f7;
+            color: #808080;
+            .cart_content {
+                >h4 {
+                    padding-top: 30px;
+                    text-align: center;
+                }
+                .cart_box {
+                    padding: 0 5px;
+                    .pull-right {
+                        text-align: right;
+                    }
+                }
+            }
+            .cart_rate {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 80px;
+                height: 100%; // background-color: royalblue;
+                border-left: 1px dashed #000;
+                padding: 50px 0;
+                text-align: center;
+                /*可以尝试给左边的盒子加伪元素--看看效果 */
+                &:before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    transform: translate(-50%, -50%);
+                    box-shadow: 0 1px 0px 0px #ccc;
+                }
+                &:after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    transform: translate(-50%, 50%);
+                    box-shadow: 0 -1px 0px 0px #ccc;
+                }
+            }
+        }
+    }
+    /* 体验 红色 */
+    .cart_exp {
+        .cart_a {
+            background-color: red;
+            color: #fff;
+            .cart_content {
+                position: relative;
+                >.wjsfont {
+                    position: absolute;
+                    top: 0;
+                    font-size: 40px;
+                }
+            }
+            .cart_rate {
+                border-color: #fff;
+            }
+        }
+    }
+    /*  进度  灰色  */
+    .cart_progress {
+        
+        .cart_a {
+            .cart_content {
+                >.cart_box {
+                    >div {
+                        width: 50%;
+                    }
+                }
+                .progress {
+                    margin-bottom: 10px;
+                }
+            }
+            .cart_rate {
+                span:first-child {
+                    color: green;
+                    border: 1px solid green;
+                }
+                span:last-child {
+                    color: red;
+                    border: 1px solid red;
+                }
+            }
+        }
+    }
+}
+
+
+/* 新闻 */
+
+.wjs_news {
+    /* 全部新闻 */
+    .all_news {
+        font-size: 30px;
+        border-bottom: 1px solid #000;
+        position: relative;
+        &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #000;
+            transform: translateY(50%);
+            background-color: #fff;
+        }
+    }
+    /* 新闻标题 */
+    .news_title {
+        position: relative;
+        /* 竖线 */
+        .line {
+            border-right: 1px dashed #000;
+            height: 400px;
+            position: absolute;
+            left: 75px;
+        }
+        ul {
+            list-style: none;
+            li {
+                margin-bottom: 60px;
+                a {
+                    // padding: 10px;
+                    display: block;
+                    height: 70px;
+                    text-align: center;
+                    width: 70px;
+                    padding-top: 10px;
+                    border-radius: 50%;
+                    background-color: #cccccc;
+                    z-index: 2;
+                    position: relative;
+                    &:hover,&:focus{
+                        background-color: red;
+                    }
+                    .wjsfont {
+                        font-size: 50px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 尾部 */
+
+footer {
+    text-align: center;
+  h4{
+      margin-top: 45px;
+      font-size: 30px;
+  }
+    ul{
+        list-style: none;
+        li{
+            float: left;
+            margin-left: 30px;
+            a{
+                .wjsfont{
+                    font-size: 80px;
+                    color: #808080;
+                }
+            }
+        }
+    }
+}
